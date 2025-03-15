@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles3.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this survey to help us improve our services.</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+    <label id="number-label" for="number">Age:</label>
+    <input type="number" id="number" name="number" min="1" max="100" placeholder="Enter your age" required>
+    
+    <label for="dropdown">How did you hear about us?</label>
+    <select id="dropdown" name="dropdown">
+      <option value="internet">Internet</option>
+      <option value="friend">Friend</option>
+      <option value="other">Other</option>
+    </select>
+    
+    <p>What is your preferred contact method?</p>
+    <label>
+      <input type="radio" name="contact" value="email" required>Email
+    </label>
+    <label>
+      <input type="radio" name="contact" value="phone">Phone
+    </label>
+    
+    <p>Which services are you interested in? (Select all that apply)</p>
+    <label>
+      <input type="checkbox" name="services" value="web_design">Web Design
+    </label>
+    <label>
+      <input type="checkbox" name="services" value="seo">SEO
+    </label>
+    <label>
+      <input type="checkbox" name="services" value="marketing">Marketing
+    </label>
+    
+    <label for="comments">Additional comments:</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Your feedback"></textarea>
+    
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
+
